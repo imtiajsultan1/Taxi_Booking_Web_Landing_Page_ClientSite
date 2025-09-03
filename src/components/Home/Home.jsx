@@ -1,0 +1,99 @@
+// import React from 'react';
+
+const Home = () => {
+    return (
+        <div style={{
+            backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed"
+        }} className='relative min-h-screen'>
+
+            {/* top navbar  */}
+            <div className='px-40 py-4 bg-black bg-opacity-80 flex justify-between '>
+                <h1 className='text-gray-200'>auto-flot@gmail.com</h1>
+                <div className='flex gap-2'>
+                    {/* facebook logo */}
+                    <img src="https://img.icons8.com/?size=100&id=87298&format=png&color=ffffff" className='size-6 p-1 border border-solid border-white' alt="N/a" />
+                    {/* insta logo */}
+                    <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=ffffff" className='size-6 p-1 border border-solid border-white' alt="N/a" />
+                    {/* youtube logo */}
+                    <img src="https://img.icons8.com/?size=100&id=37325&format=png&color=ffffff" className='size-6 p-1 border border-solid border-white' alt="N/a" />
+
+                </div>
+            </div>
+
+            {/* 2nd navbar  */}
+            <div className='px-40 py-4 flex justify-between items-center  bg-black bg-opacity-60'>
+                <div>
+                    <h1 className='text-3xl font-bold'><span className='p-1 bg-yellow-400'>Auto</span><span className='text-white'> Flot</span></h1>
+                </div>
+                <div className='flex gap-2 font-bold '>
+                    {/* Our fleet About us App FAQ Contacts */}
+                    <a href="" className='hover:text-yellow-300'>Our fleet</a>
+                    <a className='hover:text-yellow-300'>About us</a>
+                    <a className='hover:text-yellow-300'>App</a>
+                    <a className='hover:text-yellow-300'>FAQ</a>
+                    <a className='hover:text-yellow-300'>Contacts</a>
+                </div>
+                <div>
+                    <h1 className='text-yellow-400 font-bold text-2xl'>+1 (234) 567 89 00</h1>
+                </div>
+            </div>
+
+            {/* form setion  */}
+            <div className="relative">
+                {/* Dark overlay behind hero */}
+                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div className='px-40'>
+                    {/* form */}
+                    <div className="hero  min-h-screen ">
+                        <div className="hero-content flex-col lg:justify-between lg:flex-row-reverse">
+                            <div className="text-center lg:text-left lg:w-1/2">
+                                <h1 className="text-6xl font-bold">Taxi Dispatcher for Taxi Parks</h1>
+                                <p className="py-6">
+                                    Shift from high commissions to freedom with AutoFlot. The smarter way to run your taxi park – affordable subscription, flexible fares, and your own brand in front of passengers.
+                                </p>
+                                <div className="form-control mt-6">
+                                    <button className="btn bg-yellow-300 text-black">Learn More</button>
+                                </div>
+                            </div>
+                            <div className=" bg-white w-full max-w-sm shrink-0 shadow-2xl rounded-xl pb-4">
+                                <form className="card-body">
+                                    <div>
+                                        <h1 className='text-4xl font-bold text-black'>Book a Demo</h1>
+                                    </div>
+                                    {/* short yello bar */}
+                                    <div className='w-10 h-1 bg-yellow-300 mt-6 mb-6'>
+                                    </div>
+                                    {/* Taxi Company Name */}
+                                    <div className="form-control">
+                                        <input type="text" placeholder="Taxi Company Name" className="input input-bordered border-gray-300 bg-white text-black w-full" required />
+                                    </div>
+                                    {/* Email */}
+                                    <div className="form-control">
+                                        <input type="email" placeholder="Email" className="input input-bordered  border-gray-300 bg-white text-black w-full" required />
+                                    </div>
+                                    {/* contact number */}
+                                    <div className="form-control">
+                                        <input type="text" placeholder="Contact Number" className="input input-bordered  border-gray-300 bg-white text-black w-full" required />
+                                    </div>
+                                    {/* submit button */}
+                                    <div className="form-control pt-6">
+                                        <button className="btn w-full bg-yellow-300 text-black">Book Now</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* text */}
+                    <div></div>
+                </div>
+            </div>
+
+        </div>
+    );
+};
+
+export default Home;
