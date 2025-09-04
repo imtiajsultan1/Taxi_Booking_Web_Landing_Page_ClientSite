@@ -33,7 +33,7 @@ const How_it_works = () => {
   }, [items.length]);
 
   return (
-    <div className="px-40 bg-white text-black">
+    <div className="px-40 bg-white text-black py-40">
       <h1 className="text-5xl font-bold block text-center pb-20">How It Works</h1>
 
       <div className="carousel w-full">
@@ -65,8 +65,8 @@ const How_it_works = () => {
         {items.map((_, index) => (
           <button
             key={index}
-            className={`btn btn-xs ${
-              activeIndex === index ? "btn-primary" : ""
+            className={`btn btn-xs  ${
+              activeIndex === index ? "bg-yellow-300 text-black" : "bg-white text-black"
             }`}
             onClick={() => setActiveIndex(index)}
           >

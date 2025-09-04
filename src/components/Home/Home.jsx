@@ -10,7 +10,7 @@ const Home = () => {
         }} className='relative min-h-screen'>
 
             {/* top navbar  */}
-            <div className='px-40 py-4 bg-black bg-opacity-80 flex justify-between '>
+            <div className='px-40 py-4 bg-black bg-opacity-90 flex justify-between '>
                 <h1 className='text-gray-200'>auto-flot@gmail.com</h1>
                 <div className='flex gap-2'>
                     {/* facebook logo */}
@@ -24,9 +24,9 @@ const Home = () => {
             </div>
 
             {/* 2nd navbar  */}
-            <div className='px-40 py-4 flex justify-between items-center  bg-black bg-opacity-60'>
+            <div className='px-40 py-4 flex justify-between items-center  bg-black bg-opacity-80'>
                 <div>
-                    <h1 className='text-3xl font-bold'><span className='p-1 bg-yellow-400'>Auto</span><span className='text-white'> Flot</span></h1>
+                    <h1 className='text-3xl font-bold'><span className='p-1 bg-yellow-400 text-black'>Auto</span><span className='text-white'> Flot</span></h1>
                 </div>
                 <div className='flex gap-2 font-bold '>
                     {/* Our fleet About us App FAQ Contacts */}
@@ -44,18 +44,18 @@ const Home = () => {
             {/* form setion  */}
             <div className="relative">
                 {/* Dark overlay behind hero */}
-                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-80"></div>
                 <div className='px-40'>
                     {/* form */}
                     <div className="hero  min-h-screen ">
                         <div className="hero-content flex-col lg:justify-between lg:flex-row-reverse">
                             <div className="text-center lg:text-left lg:w-1/2">
-                                <h1 className="text-6xl font-bold">Taxi Dispatcher for Taxi Parks</h1>
-                                <p className="py-6">
-                                    Shift from high commissions to freedom with AutoFlot. The smarter way to run your taxi park – affordable subscription, flexible fares, and your own brand in front of passengers.
+                                <h1 className="text-6xl font-bold">Smarter, Fairer, More Flexible!</h1>
+                                <p className="py-6 font-bold">
+                                     Top Paying Heavy Commissions - Switch to Affordable Subscriptions
                                 </p>
                                 <div className="form-control mt-6">
-                                    <button className="btn bg-yellow-300 text-black">Learn More</button>
+                                    <button className="btn bg-yellow-300 text-black font-bold">Learn More</button>
                                 </div>
                             </div>
                             <div className=" bg-white w-full max-w-sm shrink-0 shadow-2xl rounded-xl pb-4">
@@ -80,7 +80,7 @@ const Home = () => {
                                     </div>
                                     {/* submit button */}
                                     <div className="form-control pt-6">
-                                        <button className="btn w-full bg-yellow-300 text-black">Book Now</button>
+                                        <button className="btn w-full bg-yellow-300 text-black font-bold">Book Now</button>
                                     </div>
                                 </form>
                             </div>
