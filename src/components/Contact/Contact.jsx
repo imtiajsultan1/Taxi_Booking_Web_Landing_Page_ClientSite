@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className='bg-yellow-300 px-40 py-40 flex justify-around items-start'>
+        <div className='bg-primary px-40 py-40 flex justify-around items-start'>
             <div className='text-black flex flex-col justify-center items-center'>
                 <h1 className=' font-bold text-4xl pb-4'>Address</h1>
                 <p  >Prokopevsk, Kemerovskaya oblast</p>

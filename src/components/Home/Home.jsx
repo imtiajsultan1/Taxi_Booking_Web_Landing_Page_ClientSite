@@ -26,18 +26,18 @@ const Home = () => {
             {/* 2nd navbar  */}
             <div className='px-40 py-4 flex justify-between items-center  bg-black bg-opacity-80'>
                 <div>
-                    <h1 className='text-3xl font-bold'><span className='p-1 bg-yellow-400 text-black'>Auto</span><span className='text-white'> Flot</span></h1>
+                    <h1 className='text-3xl font-bold'><span className='p-1 bg-primary text-black'>Auto</span><span className='text-white'> Flot</span></h1>
                 </div>
                 <div className='flex gap-2 font-bold '>
                     {/* Our fleet About us App FAQ Contacts */}
-                    <a href="" className='hover:text-yellow-300'>Our fleet</a>
-                    <a className='hover:text-yellow-300'>About us</a>
-                    <a className='hover:text-yellow-300'>App</a>
-                    <a className='hover:text-yellow-300'>FAQ</a>
-                    <a className='hover:text-yellow-300'>Contacts</a>
+                    <a href="" className='hover:text-primary'>Our fleet</a>
+                    <a className='hover:text-primary'>About us</a>
+                    <a className='hover:text-primary'>App</a>
+                    <a className='hover:text-primary'>FAQ</a>
+                    <a className='hover:text-primary'>Contacts</a>
                 </div>
                 <div>
-                    <h1 className='text-yellow-400 font-bold text-2xl'>+1 (234) 567 89 00</h1>
+                    <h1 className='text-primary font-bold text-2xl'>+1 (234) 567 89 00</h1>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@ const Home = () => {
                                      Top Paying Heavy Commissions - Switch to Affordable Subscriptions
                                 </p>
                                 <div className="form-control mt-6">
-                                    <button className="btn bg-yellow-300 text-black font-bold">Learn More</button>
+                                    <button className="btn bg-primary text-black font-bold">Learn More</button>
                                 </div>
                             </div>
                             <div className=" bg-white w-full max-w-sm shrink-0 shadow-2xl rounded-xl pb-4">
@@ -64,7 +64,7 @@ const Home = () => {
                                         <h1 className='text-4xl font-bold text-black'>Book a Demo</h1>
                                     </div>
                                     {/* short yello bar */}
-                                    <div className='w-10 h-1 bg-yellow-300 mt-6 mb-6'>
+                                    <div className='w-10 h-1 bg-primary mt-6 mb-6'>
                                     </div>
                                     {/* Taxi Company Name */}
                                     <div className="form-control">
@@ -80,7 +80,7 @@ const Home = () => {
                                     </div>
                                     {/* submit button */}
                                     <div className="form-control pt-6">
-                                        <button className="btn w-full bg-yellow-300 text-black font-bold">Book Now</button>
+                                        <button className="btn w-full bg-primary text-black font-bold">Book Now</button>
                                     </div>
                                 </form>
                             </div>

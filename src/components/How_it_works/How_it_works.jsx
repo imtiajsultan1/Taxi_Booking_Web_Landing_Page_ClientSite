@@ -66,7 +66,7 @@ const How_it_works = () => {
           <button
             key={index}
             className={`btn btn-xs  ${
-              activeIndex === index ? "bg-yellow-300 text-black" : "bg-white text-black"
+              activeIndex === index ? "bg-primary text-black" : "bg-white text-black"
             }`}
             onClick={() => setActiveIndex(index)}
           >

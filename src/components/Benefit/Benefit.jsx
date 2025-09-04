@@ -5,11 +5,11 @@ const Benefit = () => {
         <div className='bg-white px-40 py-28'>
             <div>
                 <div className='flex flex-col gap-8'>
-                    <div><h1 className='text-yellow-400 font-bold'>Welcome to AutoFlot</h1></div>
+                    <div><h1 className='text-primary font-bold'>Welcome to AutoFlot</h1></div>
                     <div>
                         <h1 className='text-4xl font-bold text-black'>Why Choose Us</h1>
                     </div>
-                    <div className='w-10 h-1 bg-yellow-400'>
+                    <div className='w-10 h-1 bg-primary'>
                     </div>
 
                     {/* div container */}

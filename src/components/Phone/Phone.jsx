@@ -15,7 +15,7 @@ const Phone = () => {
         return () => clearInterval(interval); // cleanup
     }, [items.length]);
     return (
-        <div className="bg-yellow-300 text-black px-40 pt-40 flex justify-center gap-8 items-center pb-40">
+        <div className="bg-primary text-black px-40 pt-40 flex justify-center gap-8 items-center pb-40">
             <div>
                 <div className="carousel rounded-box w-64">
                     {items.map((src, index) => (

@@ -27,7 +27,7 @@ const AddOnes = () => {
                     drivers and cars can receive ride requests from Yandex as well as
                     AutoFlot.
                 </p>
-                <button className="btn bg-yellow-300 text-black font-bold">
+                <button className="btn bg-primary text-black font-bold">
                     Learn More
                 </button>
             </div>
