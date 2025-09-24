@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const How_it_works = () => {
+const HowItWorks = () => {
   const items = [
     {
       id: 1,
@@ -78,4 +78,4 @@ const How_it_works = () => {
   );
 };
 
-export default How_it_works;
+export default HowItWorks;

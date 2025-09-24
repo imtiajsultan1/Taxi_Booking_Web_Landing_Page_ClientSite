@@ -3,6 +3,9 @@ import React from 'react';
 const Video = () => {
     return (
         <div className="bg-white px-40 py-40">
+            <div>
+                <h1 className="text-5xl text-black font-bold block text-center pb-20">Watch Our Video</h1>
+            </div>
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
                 {/* 16:9 ratio → 9/16 = 0.5625 = 56.25% */}
                 <iframe
