@@ -1,0 +1,206 @@
+{
+  "top_contact_email": {
+    "en": "auto-flot@gmail.com",
+    "ru": "auto-flot@gmail.com"
+  },
+  "nav_our_fleet": {
+    "en": "Our fleet",
+    "ru": "Наш автопарк"
+  },
+  "nav_about_us": {
+    "en": "About us",
+    "ru": "О нас"
+  },
+  "nav_app": {
+    "en": "App",
+    "ru": "Приложение"
+  },
+  "nav_faq": {
+    "en": "FAQ",
+    "ru": "Вопросы и ответы"
+  },
+  "nav_contacts": {
+    "en": "Contacts",
+    "ru": "Контакты"
+  },
+  "headline": {
+    "en": "Smarter, Fairer, More Flexible!",
+    "ru": "Умнее, честнее, гибче!"
+  },
+  "subheadline": {
+    "en": "Stop Paying Heavy Commissions - Switch to Affordable Subscriptions",
+    "ru": "Хватит платить огромные комиссии — переходите на доступную подписку"
+  },
+  "hero_primary_button": {
+    "en": "Learn More",
+    "ru": "Узнать больше"
+  },
+  "section_book_demo": {
+    "en": "Book a Demo",
+    "ru": "Записаться на демо"
+  },
+  "book_demo_text": {
+    "en": "Want to see AutoFlot in action? Fill out the form and we'll get back to you.",
+    "ru": "Хотите увидеть AutoFlot в действии? Заполните форму, и мы свяжемся с вами."
+  },
+  "form_taxi_park_name": {
+    "en": "Taxi Park Name",
+    "ru": "Название таксопарка"
+  },
+  "form_email_address": {
+    "en": "Email Address",
+    "ru": "Электронная почта"
+  },
+  "form_contact_number": {
+    "en": "Contact Number",
+    "ru": "Контактный номер"
+  },
+  "book_demo_button": {
+    "en": "Book Now",
+    "ru": "Забронировать"
+  },
+  "benefit_welcome_title": {
+    "en": "Welcome to AutoFlot",
+    "ru": "Добро пожаловать в AutoFlot"
+  },
+  "section_why_choose_autoflot": {
+    "en": "Why Choose AutoFlot?",
+    "ru": "Почему выбирают AutoFlot?"
+  },
+  "fair_pricing_title": {
+    "en": "Fair Pricing Model",
+    "ru": "Честная ценовая модель"
+  },
+  "fair_pricing_text": {
+    "en": "Stop paying endless commission cuts. Pay a predictable subscription fee and keep more of your earnings. Your subscription fee is only activated after you reach a certain number of rides. Until then, it's free. Predictable, affordable, and built for your growth.",
+    "ru": "Больше никаких бесконечных комиссий. Платите фиксированную абонплату и зарабатывайте больше. Подписка активируется только после того, как вы выполните определённое количество поездок. До этого момента — бесплатно. Прозрачно, доступно и создано для роста вашего дохода."
+  },
+  "flexible_fare_title": {
+    "en": "Flexible Fare Control",
+    "ru": "Гибкое управление тарифами"
+  },
+  "flexible_fare_text": {
+    "en": "Each taxi park sets its own per-kilometer rates. Different drivers and cars can have different fares, fully controlled by you - no central restrictions.",
+    "ru": "Каждый таксопарк сам устанавливает свои тарифы за километр. Разные водители и автомобили могут иметь разные расценки — всё под вашим контролем, без ограничений агрегатора."
+  },
+  "your_brand_title": {
+    "en": "Your Brand, Your Customers",
+    "ru": "Ваш бренд, ваши клиенты"
+  },
+  "your_brand_text": {
+    "en": "AutoFlot allows taxi parks to promote their own brand inside the passenger app. Build loyalty and stay visible to your riders.",
+    "ru": "AutoFlot позволяет таксопаркам продвигать собственный бренд в приложении для пассажиров. Формируйте лояльность и оставайтесь на виду у своих клиентов."
+  },
+  "section_passenger_choice": {
+    "en": "Passenger Choice",
+    "ru": "Выбор пассажира"
+  },
+  "passenger_choice_text": {
+    "en": "Passengers using the Navidi App can see rides from all registered taxi parks, compare fares, and choose the one that suits them best.",
+    "ru": "Пассажиры, использующие приложение Navidi, могут видеть предложения всех зарегистрированных таксопарков, сравнивать тарифы и выбирать то, что подходит именно им."
+  },
+  "passenger_choice_highlight": {
+    "en": "Navidi App",
+    "ru": "приложение Navidi"
+  },
+  "passenger_choice_note": {
+    "en": "(Here you'd place a screenshot of the passenger app on the left, with the text on the right.)",
+    "ru": "(Здесь можно разместить скриншот приложения для пассажиров слева, а текст — справа.)"
+  },
+  "section_how_it_works": {
+    "en": "How It Works",
+    "ru": "Как это работает"
+  },
+  "step_1_title": {
+    "en": "Step 1 - Register",
+    "ru": "Шаг 1 – Регистрация"
+  },
+  "step_1_text": {
+    "en": "Taxi parks sign up with AutoFlot and receive access to their own dispatcher panel. Register your vehicles and drivers.",
+    "ru": "Таксопарк регистрируется в AutoFlot и получает доступ к собственной диспетчерской панели. Зарегистрируйте свои автомобили и водителей."
+  },
+  "step_2_title": {
+    "en": "Step 2 - Set Per-Kilometer Fares",
+    "ru": "Шаг 2 – Установка тарифов за километр"
+  },
+  "step_2_text": {
+    "en": "Choose different rates for each driver.",
+    "ru": "Назначайте индивидуальные тарифы для каждого водителя."
+  },
+  "step_3_title": {
+    "en": "Step 3 - Go Live",
+    "ru": "Шаг 3 – Запуск"
+  },
+  "step_3_text": {
+    "en": "As soon as setup is done, your fleet becomes visible in the Navidi passenger app. Riders can immediately start booking.",
+    "ru": "После завершения настройки ваш автопарк становится виден в приложении Navidi. Пассажиры смогут сразу бронировать поездки."
+  },
+  "how_it_works_note": {
+    "en": "(This section is shown in a sliding window style, so each step slides in as you move through.)",
+    "ru": "(Этот раздел отображается в формате слайдов — каждый шаг плавно появляется при пролистывании.)"
+  },
+  "section_add_ons": {
+    "en": "Add-Ons",
+    "ru": "Дополнительные функции"
+  },
+  "verification_title": {
+    "en": "Driver & Vehicle Inspection Verification",
+    "ru": "Проверка водителей и автомобилей"
+  },
+  "verification_text": {
+    "en": "AutoFlot offers an integrated system for verifying both driver medical inspections and vehicle technical inspections. Only verified drivers and cars can receive ride requests from Yandex as well as AutoFlot.",
+    "ru": "AutoFlot предлагает встроенную систему проверки медицинских осмотров водителей и технических осмотров автомобилей. Только проверенные водители и машины могут получать заказы как от Yandex, так и от AutoFlot."
+  },
+  "verification_link": {
+    "en": "Learn More",
+    "ru": "Узнать больше"
+  },
+  "section_book_now": {
+    "en": "Book Now",
+    "ru": "Забронировать"
+  },
+  "video_section_title": {
+    "en": "Watch Our Video",
+    "ru": "Посмотрите наше видео"
+  },
+  "contact_address_title": {
+    "en": "Address",
+    "ru": "Адрес"
+  },
+  "contact_address_line1": {
+    "en": "Prokopevsk, Kemerovskaya oblast",
+    "ru": "Прокопьевск, Кемеровская область"
+  },
+  "contact_address_line2": {
+    "en": "Russia",
+    "ru": "Россия"
+  },
+  "contact_socials_title": {
+    "en": "Socials",
+    "ru": "Социальные сети"
+  },
+  "contact_contacts_title": {
+    "en": "Contacts",
+    "ru": "Контакты"
+  },
+  "contact_phone": {
+    "en": "+1 (234) 567 89 00",
+    "ru": "+1 (234) 567 89 00"
+  },
+  "contact_email": {
+    "en": "autoflot@gmail.com",
+    "ru": "autoflot@gmail.com"
+  },
+  "footer_brand": {
+    "en": "AutoFlot",
+    "ru": "AutoFlot"
+  },
+  "footer_rights": {
+    "en": "All rights reserved to AutoFlot",
+    "ru": "Все права защищены AutoFlot"
+  },
+  "language_toggle_label": {
+    "en": "Switch to Russian",
+    "ru": "Переключить на английский"
+  }
+}

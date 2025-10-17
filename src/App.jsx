@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import HowItWorks from './components/HowItWorks/HowItWorks'
 import Video from './components/Video/Video'
+import FloatingLanguageToggle from './components/LanguageToggle/FloatingLanguageToggle.jsx'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Video></Video>
       <Contact></Contact>
       <Footer></Footer>
+      <FloatingLanguageToggle />
     </>
   )
 }

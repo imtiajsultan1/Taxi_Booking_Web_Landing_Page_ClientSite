@@ -1,7 +1,9 @@
 import React from 'react';
-import taxi from '../../../public/taxi.jpg'
+import taxi from '../../../public/taxi.jpg';
+import { useTranslation } from '../../hooks/useTranslation.js';
 
 const AddOnes = () => {
+    const { t } = useTranslation();
     return (
         <div
             style={{
@@ -18,17 +20,15 @@ const AddOnes = () => {
 
             {/* Actual content */}
             <div className="relative z-10 w-full text-white space-y-6 flex flex-col justify-center items-center text-center">
+                <p className="text-sm uppercase tracking-[0.3em] text-primary">{t('section_add_ons')}</p>
                 <p className="text-4xl font-bold">
-                    Driver & Vehicle Inspection Verification Add-Ons
+                    {t('verification_title')}
                 </p>
                 <p className="text-lg">
-                    AutoFlot offers an integrated system for verifying both driver
-                    medical inspections and vehicle technical inspections. Only verified
-                    drivers and cars can receive ride requests from Yandex as well as
-                    AutoFlot.
+                    {t('verification_text')}
                 </p>
                 <button className="btn bg-primary text-black font-bold">
-                    Learn More
+                    {t('verification_link')}
                 </button>
             </div>
         </div>
