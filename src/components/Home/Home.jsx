@@ -2,10 +2,11 @@
 import taxi from '../../../public/taxi-home.jpg'
 import { useTranslation } from '../../hooks/useTranslation.js'
 import { useLanguage } from '../../context/LanguageContext.jsx'
+import NavLanguageSwitch from '../LanguageToggle/NavLanguageSwitch.jsx'
 
 const Home = () => {
     const { t } = useTranslation();
-    const { toggleLanguage, language } = useLanguage();
+    const { language } = useLanguage();
     const isRussian = language === 'ru';
 
     const navItems = [
@@ -66,13 +67,7 @@ const Home = () => {
                         ))}
                     </div>
                     <div className='flex flex-wrap items-center justify-center gap-3 lg:gap-4 shrink-0'>
-                        <button
-                            type="button"
-                            onClick={toggleLanguage}
-                            className={`rounded-full border border-primary px-4 py-2 font-bold text-primary transition-colors hover:bg-primary hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/80 ${isRussian ? 'text-xs leading-snug' : 'text-sm'}`}
-                        >
-                            {t('language_toggle_label')}
-                        </button>
+                        <NavLanguageSwitch />
                         <h1 className='text-primary font-bold text-2xl whitespace-nowrap'>{t('contact_phone')}</h1>
                     </div>
                 </div>

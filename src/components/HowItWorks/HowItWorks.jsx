@@ -54,46 +54,44 @@ const HowItWorks = () => {
     <div id="how-it-works" className="px-6 md:px-12 lg:px-20 bg-white text-black py-20 md:py-24">
       <h1 className="text-4xl md:text-5xl font-bold block text-center pb-12 md:pb-16">{t('section_how_it_works')}</h1>
 
-      <div className="w-full max-w-4xl mx-auto">
+      <div className="w-full max-w-5xl mx-auto">
         {steps.map((item, index) => (
           activeIndex === index && (
             <div
               key={item.id}
-              className="w-full h-full flex flex-col items-center gap-5 md:gap-6 transition-opacity duration-700"
+              className="w-full h-full flex flex-col items-center gap-6 md:gap-8 transition-opacity duration-700"
             >
               <h2 className="text-2xl md:text-3xl font-bold text-center">{t(item.titleKey)}</h2>
 
-              <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur">
-                {item.layout === "single" ? (
-                  <figure className="relative flex items-center justify-center w-full bg-black/80" style={mediaDimensions}>
-                    <img
-                      src={item.img}
-                      loading={index === 0 ? "eager" : "lazy"}
-                      className="absolute inset-0 h-full w-full object-contain"
-                      alt={t(item.titleKey)}
-                    />
-                  </figure>
-                ) : (
-                  <div className="grid gap-4 p-4 sm:grid-cols-3 bg-black/60">
-                    {item.images.map((imageSrc, imgIndex) => (
-                      <figure
-                        key={imageSrc}
-                        className="relative flex items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-black/80"
-                        style={gridMediaDimensions}
-                      >
-                        <img
-                          src={imageSrc}
-                          loading="lazy"
-                          className="absolute inset-0 h-full w-full object-contain"
-                          alt={`${t(item.titleKey)} image ${imgIndex + 1}`}
-                        />
-                      </figure>
-                    ))}
-                  </div>
-                )}
-              </div>
+              {item.layout === "single" ? (
+                <figure className="flex items-center justify-center w-full" style={mediaDimensions}>
+                  <img
+                    src={item.img}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    className="h-full w-full object-contain"
+                    alt={t(item.titleKey)}
+                  />
+                </figure>
+              ) : (
+                <div className="grid gap-4 p-5 sm:grid-cols-3">
+                  {item.images.map((imageSrc, imgIndex) => (
+                    <figure
+                      key={imageSrc}
+                      className="flex items-center justify-center"
+                      style={gridMediaDimensions}
+                    >
+                      <img
+                        src={imageSrc}
+                        loading="lazy"
+                        className="h-full w-full object-contain"
+                        alt={`${t(item.titleKey)} image ${imgIndex + 1}`}
+                      />
+                    </figure>
+                  ))}
+                </div>
+              )}
 
-              <p className="mt-1 md:mt-2 max-w-3xl text-base md:text-lg text-center text-black/80">{t(item.descriptionKey)}</p>
+              <p className="mt-2 max-w-3xl text-base md:text-lg text-center text-slate-700">{t(item.descriptionKey)}</p>
             </div>
           )
         ))}
