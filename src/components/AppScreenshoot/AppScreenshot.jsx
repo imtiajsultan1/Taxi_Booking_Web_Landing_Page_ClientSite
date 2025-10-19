@@ -23,7 +23,7 @@ const AppScreenshot = () => {
     const [beforeHighlight, afterHighlight] = hasHighlight ? passengerText.split(highlight) : [passengerText, ""];
 
     return (
-        <div className="bg-primary text-black px-40 pt-40 flex justify-center gap-8 items-center pb-40">
+        <div id="app" className="bg-primary text-black px-40 pt-40 flex justify-center gap-8 items-center pb-40">
             <div>
                 <div className="carousel rounded-box w-64">
                     {screenshots.map((src, index) => (

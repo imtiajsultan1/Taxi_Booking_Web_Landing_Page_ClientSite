@@ -4,7 +4,7 @@ import { useTranslation } from '../../hooks/useTranslation.js';
 const Contact = () => {
     const { t } = useTranslation();
     return (
-        <div className='bg-primary px-40 py-40 flex justify-around items-start'>
+        <div id="contact" className='bg-primary px-40 py-40 flex justify-around items-start'>
             <div className='text-black flex flex-col justify-center items-center text-center'>
                 <h1 className=' font-bold text-4xl pb-4'>{t('contact_address_title')}</h1>
                 <p>{t('contact_address_line1')}</p>

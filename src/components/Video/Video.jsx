@@ -4,7 +4,7 @@ import { useTranslation } from '../../hooks/useTranslation.js';
 const Video = () => {
     const { t } = useTranslation();
     return (
-        <div className="bg-white px-40 py-40">
+        <div id="video" className="bg-white px-40 py-40">
             <div>
                 <h1 className="text-5xl text-black font-bold block text-center pb-20">{t('video_section_title')}</h1>
             </div>

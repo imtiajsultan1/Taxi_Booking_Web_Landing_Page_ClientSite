@@ -6,6 +6,7 @@ const AddOnes = () => {
     const { t } = useTranslation();
     return (
         <div
+            id="add-ons"
             style={{
                 backgroundImage:
                     `url(${taxi})`,

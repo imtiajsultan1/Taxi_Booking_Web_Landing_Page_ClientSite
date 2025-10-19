@@ -4,7 +4,7 @@ import { useTranslation } from '../../hooks/useTranslation.js';
 const Benefit = () => {
     const { t } = useTranslation();
     return (
-        <div className='bg-white px-40 py-28'>
+        <div id="benefits" className='bg-white px-40 py-28'>
             <div>
                 <div className='flex flex-col gap-8'>
                     <div><h1 className='text-primary font-bold'>{t('benefit_welcome_title')}</h1></div>

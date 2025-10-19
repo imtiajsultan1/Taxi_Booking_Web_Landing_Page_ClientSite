@@ -1,22 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "../../hooks/useTranslation.js";
+import stepImageOne from "../../../public/howItWorks1.jpg";
+import stepImageTwo from "../../../public/howItWorks2.jpg";
+import stepImageThreeA from "../../../public/howItWorks3one.jpg";
+import stepImageThreeB from "../../../public/howItWorks3two.jpg";
+import stepImageThreeC from "../../../public/howItWorks3three.jpg";
 
 const steps = [
   {
     id: 1,
-    img: "https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp",
+    layout: "single",
+    img: stepImageOne,
     titleKey: "step_1_title",
     descriptionKey: "step_1_text",
   },
   {
     id: 2,
-    img: "https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp",
+    layout: "single",
+    img: stepImageTwo,
     titleKey: "step_2_title",
     descriptionKey: "step_2_text",
   },
   {
     id: 3,
-    img: "https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp",
+    layout: "grid",
+    images: [stepImageThreeA, stepImageThreeB, stepImageThreeC],
     titleKey: "step_3_title",
     descriptionKey: "step_3_text",
   },
@@ -25,39 +33,69 @@ const steps = [
 const HowItWorks = () => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
+    if (isPaused) {
+      return undefined;
+    }
+
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % steps.length);
-    }, 2000); // auto change every 2s
+    }, 6000); // auto change every 6s for readability
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
+
+  const mediaDimensions = useMemo(() => ({ height: "min(55vh, 460px)" }), []);
+  const gridMediaDimensions = useMemo(() => ({ height: "min(40vh, 320px)" }), []);
 
   return (
-    <div className="px-40 bg-white text-black py-40">
-      <h1 className="text-5xl font-bold block text-center pb-20">{t('section_how_it_works')}</h1>
+    <div id="how-it-works" className="px-6 md:px-12 lg:px-20 bg-white text-black py-20 md:py-24">
+      <h1 className="text-4xl md:text-5xl font-bold block text-center pb-12 md:pb-16">{t('section_how_it_works')}</h1>
 
-      <div className="carousel w-full">
+      <div className="w-full max-w-4xl mx-auto">
         {steps.map((item, index) => (
-          <div
-            key={item.id}
-            className={`carousel-item w-full h-full flex flex-col items-center ${activeIndex === index ? "block" : "hidden"
-              }`}
-          >
-            {/* Step title above image */}
-            <h2 className="text-2xl font-bold mb-4">{t(item.titleKey)}</h2>
+          activeIndex === index && (
+            <div
+              key={item.id}
+              className="w-full h-full flex flex-col items-center gap-5 md:gap-6 transition-opacity duration-700"
+            >
+              <h2 className="text-2xl md:text-3xl font-bold text-center">{t(item.titleKey)}</h2>
 
-            {/* Image should expand full width inside px-40 container */}
-            <img
-              src={item.img}
-              className="w-full rounded-lg shadow-md"
-              alt={t(item.titleKey)}
-            />
+              <div className="w-full rounded-2xl overflow-hidden shadow-2xl bg-black/10 backdrop-blur">
+                {item.layout === "single" ? (
+                  <figure className="relative flex items-center justify-center w-full bg-black/80" style={mediaDimensions}>
+                    <img
+                      src={item.img}
+                      loading={index === 0 ? "eager" : "lazy"}
+                      className="absolute inset-0 h-full w-full object-contain"
+                      alt={t(item.titleKey)}
+                    />
+                  </figure>
+                ) : (
+                  <div className="grid gap-4 p-4 sm:grid-cols-3 bg-black/60">
+                    {item.images.map((imageSrc, imgIndex) => (
+                      <figure
+                        key={imageSrc}
+                        className="relative flex items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-black/80"
+                        style={gridMediaDimensions}
+                      >
+                        <img
+                          src={imageSrc}
+                          loading="lazy"
+                          className="absolute inset-0 h-full w-full object-contain"
+                          alt={`${t(item.titleKey)} image ${imgIndex + 1}`}
+                        />
+                      </figure>
+                    ))}
+                  </div>
+                )}
+              </div>
 
-            {/* Description below image */}
-            <p className="mt-4 text-lg text-center">{t(item.descriptionKey)}</p>
-          </div>
+              <p className="mt-1 md:mt-2 max-w-3xl text-base md:text-lg text-center text-black/80">{t(item.descriptionKey)}</p>
+            </div>
+          )
         ))}
       </div>
 
@@ -66,9 +104,12 @@ const HowItWorks = () => {
         {steps.map((_, index) => (
           <button
             key={index}
-            className={`btn btn-xs  ${activeIndex === index ? "bg-primary text-black" : "bg-white text-black"
+            className={`btn btn-sm font-semibold border-none ${activeIndex === index ? "bg-primary text-black" : "bg-white text-black"
               }`}
-            onClick={() => setActiveIndex(index)}
+            onClick={() => {
+              setActiveIndex(index);
+              setIsPaused(true);
+            }}
           >
             {index + 1}
           </button>

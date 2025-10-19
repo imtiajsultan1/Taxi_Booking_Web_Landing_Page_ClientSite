@@ -1,26 +1,34 @@
 {
   "top_contact_email": {
-    "en": "auto-flot@gmail.com",
-    "ru": "auto-flot@gmail.com"
+    "en": "info@autoflot.com",
+    "ru": "info@autoflot.com"
   },
-  "nav_our_fleet": {
-    "en": "Our fleet",
-    "ru": "Наш автопарк"
+  "nav_home": {
+    "en": "Home",
+    "ru": "Главная"
   },
-  "nav_about_us": {
-    "en": "About us",
-    "ru": "О нас"
+  "nav_benefits": {
+    "en": "Benefits",
+    "ru": "Преимущества"
   },
   "nav_app": {
     "en": "App",
     "ru": "Приложение"
   },
-  "nav_faq": {
-    "en": "FAQ",
-    "ru": "Вопросы и ответы"
+  "nav_how_it_works": {
+    "en": "How it works",
+    "ru": "Как это работает"
   },
-  "nav_contacts": {
-    "en": "Contacts",
+  "nav_add_ons": {
+    "en": "Add-ons",
+    "ru": "Дополнения"
+  },
+  "nav_video": {
+    "en": "Video",
+    "ru": "Видео"
+  },
+  "nav_contact": {
+    "en": "Contact",
     "ru": "Контакты"
   },
   "headline": {
@@ -168,12 +176,12 @@
     "ru": "Адрес"
   },
   "contact_address_line1": {
-    "en": "Prokopevsk, Kemerovskaya oblast",
-    "ru": "Прокопьевск, Кемеровская область"
+    "en": "Mogilev",
+    "ru": "Могилёв"
   },
   "contact_address_line2": {
-    "en": "Russia",
-    "ru": "Россия"
+    "en": "Belarus",
+    "ru": "Беларусь"
   },
   "contact_socials_title": {
     "en": "Socials",
