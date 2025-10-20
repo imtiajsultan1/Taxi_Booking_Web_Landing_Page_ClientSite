@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "../../hooks/useTranslation.js";
-import stepImageOne from "../../../public/howItWorks1.jpg";
-import stepImageTwo from "../../../public/howItWorks2.jpg";
-import stepImageThreeA from "../../../public/howItWorks3one.jpg";
-import stepImageThreeB from "../../../public/howItWorks3two.jpg";
-import stepImageThreeC from "../../../public/howItWorks3three.jpg";
+import stepImageOne from "../../assets/howItWorks1.jpg";
+import stepImageTwo from "../../assets/howItWorks2.jpg";
+import stepImageThreeA from "../../assets/howItWorks3one.jpg";
+import stepImageThreeB from "../../assets/howItWorks3two.jpg";
+import stepImageThreeC from "../../assets/howItWorks3three.jpg";
 
 const steps = [
   {

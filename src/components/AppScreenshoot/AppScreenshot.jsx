@@ -1,5 +1,5 @@
-import phone1 from '../../../public/phone1.png'
-import phone2 from '../../../public/phone2.png'
+import phone1 from '../../assets/phone1.png'
+import phone2 from '../../assets/phone2.png'
 import { useEffect, useState } from "react";
 import { useTranslation } from '../../hooks/useTranslation.js';
 

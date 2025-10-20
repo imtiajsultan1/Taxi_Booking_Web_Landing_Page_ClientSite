@@ -63,9 +63,21 @@
     "en": "Contact Number",
     "ru": "Контактный номер"
   },
+  "form_submit_success": {
+    "en": "Thank you! We will get back to you shortly.",
+    "ru": "Спасибо! Мы свяжемся с вами в ближайшее время."
+  },
+  "form_submit_error": {
+    "en": "An error occurred while submitting the form. Please try again later.",
+    "ru": "Произошла ошибка при отправке формы. Пожалуйста, попробуйте позже."
+  },
   "book_demo_button": {
     "en": "Book Now",
     "ru": "Забронировать"
+  },
+  "book_demo_button_waiting": {
+    "en": "Please Wait...",
+    "ru": "Пожалуйста, подождите..."
   },
   "benefit_welcome_title": {
     "en": "Welcome to AutoFlot",

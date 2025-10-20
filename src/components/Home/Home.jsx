@@ -1,13 +1,22 @@
-// import React from 'react';
-import taxi from '../../../public/taxi-home.jpg'
+import { useState } from 'react'
+import taxi from '../../assets/taxi-home.jpg'
 import { useTranslation } from '../../hooks/useTranslation.js'
 import { useLanguage } from '../../context/LanguageContext.jsx'
 import NavLanguageSwitch from '../LanguageToggle/NavLanguageSwitch.jsx'
+
+const API_BASE = import.meta.env.VITE_API_URL;
 
 const Home = () => {
     const { t } = useTranslation();
     const { language } = useLanguage();
     const isRussian = language === 'ru';
+
+    // new state
+    const [parkName, setParkName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState(null);
 
     const navItems = [
         // { key: 'nav_home', target: 'home' },
@@ -23,6 +32,30 @@ const Home = () => {
         const section = document.getElementById(target);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
+    // new submit handler
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+        setStatus(null);
+        try {
+            const res = await fetch(`${API_BASE}/book-demo`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ parkName, email, phone, lang: language }),
+            });
+            if (!res.ok) {
+                const text = await res.text();
+                throw new Error(text || 'Server error');
+            }
+            setStatus({ ok: true, msg: t('form_submit_success') });
+            setParkName(''); setEmail(''); setPhone('');
+        } catch (err) {
+            setStatus({ ok: false, msg: err.message || t('form_submit_error') });
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -91,7 +124,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <div className=" bg-white w-full max-w-sm shrink-0 shadow-2xl rounded-xl pb-4">
-                                <form className="card-body">
+                                <form className="card-body" onSubmit={handleSubmit}>
                                     <div>
                                         <h1 className='text-4xl font-bold text-black'>{t('section_book_demo')}</h1>
                                     </div>
@@ -100,20 +133,49 @@ const Home = () => {
                                     </div>
                                     {/* Taxi Company Name */}
                                     <div className="form-control">
-                                        <input type="text" placeholder={t('form_taxi_park_name')} className="input input-bordered border-gray-300 bg-white text-black w-full" required />
+                                        <input
+                                            type="text"
+                                            placeholder={t('form_taxi_park_name')}
+                                            className="input input-bordered border-gray-300 bg-white text-black w-full"
+                                            value={parkName}
+                                            onChange={e => setParkName(e.target.value)}
+                                            required
+                                        />
                                     </div>
                                     {/* Email */}
                                     <div className="form-control">
-                                        <input type="email" placeholder={t('form_email_address')} className="input input-bordered  border-gray-300 bg-white text-black w-full" required />
+                                        <input
+                                            type="email"
+                                            placeholder={t('form_email_address')}
+                                            className="input input-bordered  border-gray-300 bg-white text-black w-full"
+                                            value={email}
+                                            onChange={e => setEmail(e.target.value)}
+                                            required
+                                        />
                                     </div>
                                     {/* contact number */}
-                                    <div className="form-control">
-                                        <input type="text" placeholder={t('form_contact_number')} className="input input-bordered  border-gray-300 bg-white text-black w-full" required />
+                                    <div className="form-control">  
+                                        <input
+                                            type="text"
+                                            placeholder={t('form_contact_number')}
+                                            className="input input-bordered  border-gray-300 bg-white text-black w-full"
+                                            value={phone}
+                                            onChange={e => setPhone(e.target.value)}
+                                            required
+                                        />
                                     </div>
                                     {/* submit button */}
                                     <div className="form-control pt-6">
-                                        <button className="btn w-full bg-primary text-black font-bold">{t('book_demo_button')}</button>
+                                        <button type="submit" className="btn w-full bg-primary text-black font-bold" disabled={loading}>
+                                            {loading ? t('book_demo_button_waiting') : t('book_demo_button')}
+                                        </button>
                                     </div>
+
+                                    {status && (
+                                        <p className={`mt-3 ${status.ok ? 'text-black' : 'text-red-500'}`}>
+                                            {status.msg}
+                                        </p>
+                                    )}
                                 </form>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import taxi from '../../../public/taxi.jpg';
+import taxi from '../../assets/taxi.jpg';
 import { useTranslation } from '../../hooks/useTranslation.js';
 
 const AddOnes = () => {
